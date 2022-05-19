@@ -21,7 +21,8 @@ export default createGlobalStyle`
 
     input[type='text'],
     input[type='tel'],
-    input[type='email']{
+    input[type='email'],
+    input[type='password']{
         border: none;
         width:100%;
         max-width: 500px;
