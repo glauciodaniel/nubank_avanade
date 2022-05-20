@@ -1,28 +1,12 @@
 import { useReducer, useState } from "react";
 import styled from "styled-components";
-import bannerBG from "../assets/images/bannerBG.png";
+import Banner from "../components/Banner";
 
 const Container = styled.div`
   display: flex;
   fieldset {
     width: 60%;
     border: none;
-  }
-`;
-// mydevice.io
-const Banner = styled.div`
-  width: 50%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: red solid 1px;
-  background: ${(props) =>
-      props.background ? "url(" + props.background + ") #e5e5e5 " : ""}
-    20% 90% no-repeat;
-  @media (max-width: 1278px) {
-    background-size: 60%;
   }
 `;
 
@@ -56,10 +40,8 @@ function Login() {
 
   return (
     <Container>
-      <Banner background={bannerBG}>
-        <h1>
-          Complete os campos ao lado para pedir sua Conta e Cartão de crédito
-        </h1>
+      <Banner background={true}>
+        <h1>Faça seu Login</h1>
       </Banner>
       <Banner>
         {submitting && (

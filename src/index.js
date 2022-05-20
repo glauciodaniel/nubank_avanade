@@ -6,6 +6,7 @@ import App from "./layout/App";
 import Login from "./layout/Login";
 import Register from "./layout/Register";
 import createGlobalStyle from "./assets/styles/global";
+import Extract from "./layout/Extract";
 
 // React ou Webpack
 // componentes/Register
@@ -21,6 +22,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/extract" element={<Extract />} />
       </Routes>
     </BrowserRouter>
     <GlobalStyle />
