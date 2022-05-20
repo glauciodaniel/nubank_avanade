@@ -4,9 +4,35 @@ import Banner from "../components/Banner";
 
 const Container = styled.div`
   display: flex;
-  fieldset {
-    width: 60%;
+  fieldset:not(:nth-child(6)) {
+    min-height: 80px;
+    width: 80%;
     border: none;
+  }
+  fieldset:nth-child(6) {
+    border: none;
+    width: 80%;
+  }
+
+  > div:nth-child(2) {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    button {
+      width: 80%;
+      line-height: 50px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 2%;
+    }
   }
 `;
 
